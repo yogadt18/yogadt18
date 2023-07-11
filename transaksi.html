@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Pemesanan Tiket</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+    }
+    
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+     <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="assets/img/loket.png" width="50" height="50" class="rounded-circle">   Loket Express</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Logout</a>
+        </ul>
+      </div>
+    </div>
+  </nav><br><br><br>
+
+  <div class="container">
+    <h1>Dashboard Pemesanan Tiket</h1>
+    
+    <div class="form-group">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="destination">Tempat Wisata:</label>
+      <select id="destination" name="destination">
+        <option value="">Pilih Tempat Wisata</option>
+        <option value="pantai">Pantai</option>
+        <option value="pergunungan">Pergunungan</option>
+        <option value="Perhutanan">Perhutanan</option>
+        <option value="pemandian">Pemandian</option>
+      </select>
+    </div>
+    <div class="form-group">
+        <label for="destination">Jumlah Pesan Tiket:</label>
+        <select id="destination" name="destination">
+          <option value="">Tentukan Jumlah Pesan Tiket</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+        </select>
+      </div>
+    <div class="form-group">
+      <label for="date">Tanggal Keberangkatan:</label>
+      <input type="text" id="date" name="date" placeholder="Masukkan tanggal keberangkatan" required>
+    </div>
+    
+    <div class="form-group">
+      <button type="submit">Pesan Tiket</button>
+    </div>
+  </div>
+</body>
+</html>
